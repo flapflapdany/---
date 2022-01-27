@@ -1,0 +1,7 @@
+﻿  MyForm.cpp
+c:\users\vikto\onedrive\документы\visual studio 2017\projects\nomber9\nomber9\myform.h(1040): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\vikto\onedrive\документы\visual studio 2017\projects\nomber9\nomber9\myform.h(1278): warning C4101: x1: неиспользованная локальная переменная
+c:\users\vikto\onedrive\документы\visual studio 2017\projects\nomber9\nomber9\myform.h(1538): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\vikto\onedrive\документы\visual studio 2017\projects\nomber9\nomber9\myform.h(930): warning C4715: nomber9::MyForm::Fun: значение возвращается не при всех путях выполнения
+  About.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  nomber9.vcxproj -> C:\Users\vikto\OneDrive\Документы\Visual Studio 2017\Projects\nomber9\Debug\nomber9.exe

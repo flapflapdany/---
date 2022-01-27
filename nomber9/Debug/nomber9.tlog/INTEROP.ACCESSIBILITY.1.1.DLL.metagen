@@ -1,0 +1,110 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.Accessibility.1.1, Version=1.1.*, Culture=Инвариантный язык (Инвариантная страна): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Interface Accessibility.IAccessible: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object accParent 'get ' : 
+    Int32 accChildCount 'get ' : 
+    System.Object accChild [System.Object] 'get ' : 
+    System.String accName [System.Object] 'get set' : 
+    System.String accValue [System.Object] 'get set' : 
+    System.String accDescription [System.Object] 'get ' : 
+    System.Object accRole [System.Object] 'get ' : 
+    System.Object accState [System.Object] 'get ' : 
+    System.String accHelp [System.Object] 'get ' : 
+    Int32 accHelpTopic [System.String ByRef, System.Object] 'get ' : 
+    System.String accKeyboardShortcut [System.Object] 'get ' : 
+    System.Object accFocus 'get ' : 
+    System.Object accSelection 'get ' : 
+    System.String accDefaultAction [System.Object] 'get ' : 
+  Methods:
+    get_accParent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accChildCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accChild(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accName(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accValue(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accDescription(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accRole(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accState(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accHelp(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accHelpTopic(String&(Out, HasFieldMarshal), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accKeyboardShortcut(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accFocus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_accDefaultAction(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    accSelect(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accLocation(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accNavigate(Int32(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accHitTest(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    accDoDefaultAction(Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    set_accName(Object(In, Optional, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_accValue(Object(In, Optional, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Accessibility.IAccessibleHandler: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    AccessibleObjectFromID(Int32(In), Int32(In), IAccessible&(Out, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Accessibility.IAccIdentity: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetIdentityString(UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Accessibility.IAccPropServer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    GetPropValue(Byte&(In), UInt32(In), Guid(In), Object&(Out, HasFieldMarshal), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Accessibility.IAccPropServices: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    SetPropValue(Byte&(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetPropServer(Byte&(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearProps(Byte&(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHwndProp(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHwndPropStr(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHwndPropServer(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearHwndProps(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ComposeHwndIdentityString(_RemotableHandle&(In), UInt32(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DecomposeHwndIdentityString(Byte&(In), UInt32(In), IntPtr(Out), UInt32&(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHmenuProp(_RemotableHandle&(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHmenuPropStr(_RemotableHandle&(In), UInt32(In), Guid(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetHmenuPropServer(_RemotableHandle&(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearHmenuProps(_RemotableHandle&(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ComposeHmenuIdentityString(_RemotableHandle&(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DecomposeHmenuIdentityString(Byte&(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct Accessibility.AnnoScope: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Accessibility.AnnoScope ANNO_THIS = 0 : Public, Static, Literal, HasDefault
+    Accessibility.AnnoScope ANNO_CONTAINER = 1 : Public, Static, Literal, HasDefault
+Struct Accessibility._RemotableHandle: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Fields:
+    Int32 fContext : Public
+    Accessibility.__MIDL_IWinTypes_0009 u : Public
+Struct Accessibility.__MIDL_IWinTypes_0009: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Sealed
+  :System.ValueType
+  Fields:
+    Int32 hInproc : Public
+    Int32 hRemote : Public
+Class Accessibility.CAccPropServicesClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    Accessibility.IAccPropServices
+    Accessibility.CAccPropServices
+  Methods:
+    SetPropValue(Byte&(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetPropServer(Byte&(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearProps(Byte&(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHwndProp(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHwndPropStr(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHwndPropServer(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearHwndProps(_RemotableHandle&(In), UInt32(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ComposeHwndIdentityString(_RemotableHandle&(In), UInt32(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DecomposeHwndIdentityString(Byte&(In), UInt32(In), IntPtr(Out), UInt32&(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHmenuProp(_RemotableHandle&(In), UInt32(In), Guid(In), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHmenuPropStr(_RemotableHandle&(In), UInt32(In), Guid(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetHmenuPropServer(_RemotableHandle&(In), UInt32(In), Guid&(In), Int32(In), IAccPropServer(In, HasFieldMarshal), AnnoScope(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearHmenuProps(_RemotableHandle&(In), UInt32(In), Guid&(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ComposeHmenuIdentityString(_RemotableHandle&(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DecomposeHmenuIdentityString(Byte&(In), UInt32(In), IntPtr(Out), UInt32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface Accessibility.CAccPropServices: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    Accessibility.IAccPropServices
